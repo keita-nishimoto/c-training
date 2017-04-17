@@ -25,11 +25,7 @@ int main(void) {
 
 // 関数定義
 float getGreaterNumber(float a, float b) {
-    if (a >= b) {
-        return a;
-    } else {
-        return b;
-    }
+    return (a >= b) ? a: b;
 }
 
 void sayhi(void) {
