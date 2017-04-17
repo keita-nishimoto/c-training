@@ -17,4 +17,13 @@ int main(void) {
     for (int i = 0; i < sizeof(sales) / sizeof(sales[0]); i++) {
         printf("%d\n", sales[i]);
     }
+
+    // C言語では 文字列 = charの配列（※ 終端は「\0」）
+    // char str[] = {'a', 'b', 'c', '\0'}; のようにも書ける
+    char str[] = "abc";
+
+    // 出力する際は普通に下記のような形でOK
+    printf("%s\n", str);
+
+    return 0;
 }
